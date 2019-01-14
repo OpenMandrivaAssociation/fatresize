@@ -7,7 +7,9 @@ Group:		System/Base
 URL:		https://github.com/ya-mouse/fatresize
 Source0:	https://github.com/ya-mouse/fatresize/archive/v%{version}.tar.gz
 BuildRequires:	pkgconfig(libparted)
+BuildRequires:	pkgconfig(uuid)
 BuildRequires:	autoconf automake libtool
+BuildRequires:	make
 
 %description
 Text mode tool for resizing FAT partitions
