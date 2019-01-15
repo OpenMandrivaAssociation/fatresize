@@ -29,8 +29,9 @@ aclocal
 autoheader
 automake -a
 autoconf
-
 %configure
+# Take care of indirect dependencies -- parted uses uuid
+sed -i -e 's,-lparted-fs-resize,-lparted-fs-resize -luuid,g' Makefile
 
 %build
 %make_build
