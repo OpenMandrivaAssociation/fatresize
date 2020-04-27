@@ -1,6 +1,6 @@
 Summary:	Text mode tool for resizing FAT partitions
 Name:		fatresize
-Version:	1.0.4
+Version:	1.1.0
 Release:	1
 License:	GPLv2+
 Group:		System/Base
