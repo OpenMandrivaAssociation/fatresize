@@ -1,7 +1,9 @@
+%global optflags %{optflags} -Oz
+
 Summary:	Text mode tool for resizing FAT partitions
 Name:		fatresize
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Base
 URL:		https://github.com/ya-mouse/fatresize
@@ -12,7 +14,7 @@ BuildRequires:	autoconf automake libtool
 BuildRequires:	make
 
 %description
-Text mode tool for resizing FAT partitions
+Text mode tool for resizing FAT partitions.
 
 %package devel
 Summary:	Development files for %{name}
@@ -24,7 +26,8 @@ The %{name}-devel package contains header files developing sudo
 plugins that use %{name}.
 
 %prep
-%setup -q
+%autosetup -p1
+
 aclocal
 autoheader
 automake -a
