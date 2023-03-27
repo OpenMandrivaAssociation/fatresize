@@ -1,9 +1,10 @@
-%global optflags %{optflags} -Oz
+# (tpg) optimize it a bit
+%global optflags %{optflags} -Oz --rtlib=compiler-rt
 
 Summary:	Text mode tool for resizing FAT partitions
 Name:		fatresize
 Version:	1.1.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Base
 URL:		https://github.com/ya-mouse/fatresize
@@ -44,4 +45,4 @@ sed -i -e 's,-lparted-fs-resize,-lparted-fs-resize -luuid,g' Makefile
 
 %files
 %{_sbindir}/*
-%{_mandir}/man1/*
+%doc %{_mandir}/man1/*
