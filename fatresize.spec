@@ -4,7 +4,7 @@
 Summary:	Text mode tool for resizing FAT partitions
 Name:		fatresize
 Version:	1.1.0
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		System/Base
 URL:		https://github.com/ya-mouse/fatresize
