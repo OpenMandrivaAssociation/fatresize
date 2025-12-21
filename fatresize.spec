@@ -9,6 +9,8 @@ License:	GPLv2+
 Group:		System/Base
 URL:		https://github.com/ya-mouse/fatresize
 Source0:	https://github.com/ya-mouse/fatresize/archive/v%{version}.tar.gz
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	pkgconfig(libparted)
 BuildRequires:	pkgconfig(uuid)
 BuildRequires:	autoconf automake libtool
